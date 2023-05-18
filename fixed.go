@@ -27,6 +27,7 @@ const nan = int64(1 << 62)
 
 var NaN = Fixed{fp: nan}
 var ZERO = Fixed{fp: 0}
+const MAX = float64(9999999999.99999999)
 
 var errTooLarge = errors.New("significand too large")
 var errFormat = errors.New("invalid encoding")
