@@ -21,11 +21,9 @@ type Fixed struct {
 // the only required changes. only 18 significant digits are supported due to NaN
 
 const nPlaces = 8
-const scale = int64(10 * 10 * 10 * 10 * 10 * 10 * 10)
-const zeros = "0000000"
-const MAX = float64(99999999999.9999999)
-
-const nan = int64(1<<63 - 1)
+const scale = int64(10 * 10 * 10 * 10 * 10 * 10 * 10 * 10)
+const zeros = "00000000"
+const nan = int64(1 << 62)
 
 var NaN = Fixed{fp: nan}
 var ZERO = Fixed{fp: 0}
