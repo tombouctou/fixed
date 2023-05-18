@@ -20,7 +20,7 @@ type Fixed struct {
 // the following constants can be changed to configure a different number of decimal places - these are
 // the only required changes. only 18 significant digits are supported due to NaN
 
-const nPlaces = 7
+const nPlaces = 8
 const scale = int64(10 * 10 * 10 * 10 * 10 * 10 * 10)
 const zeros = "0000000"
 const MAX = float64(99999999999.9999999)
